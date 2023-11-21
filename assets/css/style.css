@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;600;700&display=swap');
+
+body{
+    font-family: "spline sans", sans-serif;
+    color: #777;
+    line-height: 1.7;
+}
+
+.nav-link{
+    color: #777; 
+}
+
+.nav-link:hover{
+    color: #f58d17;
+   
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: 600;
+    color: #222;
+}
+a{
+    color:  #222;
+    text-decoration: none;
+    transition: all 1.4s;
+    font-weight: 600;
+
+}
+a:hover{
+    color: #f58d17;
+}
+/* btn */
+.btn{
+    border-radius: 0;
+    padding: 14px 13px;
+}
+.btn-brand{
+    color: #fff;
+    font-weight: 500;
+    border-color: #f58d17;
+    background-color:  #f58d17;
+}
+.btn-brand:hover{
+    border-color: #d37310;
+    background-color:  #d37310;
+    color: #fff;
+
+}
+/* start of sliders */
+.bg-cover{
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+.slide-1{
+background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../images/hall2.jpg)
+}
+.slide-2{
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../images/slide.jpg)
+ }
+ #heroslider h6::after,
+ #heroslider h6::before{
+    content: "";
+    width: 40px;
+    height: 4px;
+    background-color: #ffffff;
+    display: inline-block;
+    margin: 10px;
+    vertical-align: middle;
+ }
+ .carousel-control-prev,
+ .carousel-control-next{
+    background:rgba(0, 0, 0, 0.6);
+    width: 40px;
+    height: 70px;
+    margin: auto;
+ }
+/* end of sliders */
+
+/* sections */
+section{
+    padding-top: 120px;
+    padding-bottom: 120;
+}
+.shadow-on-hover{
+transition: all 0.3s;
+}
+.shadow-on-hover:hover{
+box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+ img{
+    width: 100%;
+ }
+ .navbar-brand img {
+    height: 40px; /* Adjust the height as needed */
+    width: 40px;
+    
+    margin-right: 10px; /* Add some right margin for spacing */
+  }
+
+/*about section*/
+#about img {
+    width: 100%; /* Make images fill the width of their parent container */
+    height: auto; /* Maintain aspect ratio */
+    margin: 6px 6px 6px 6px; /* Add some bottom margin for spacing between images */
+    border-radius: 8px; /* Optional: Add border-radius for a rounded look */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+  }
+  #about .devider{
+width: 60px;
+height: 2px;
+display: block;
+background-color: #f58d17;
+
+
+  }
+  /*intro*/
+  .intro-text{
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+ .intro-text p{
+    max-width: 500;
+    margin: 16px auto 0 auto;
+ }
+ /*menu section*/
+ #menu .nav-pills .nav-link{
+    background-color: #fff;
+    margin-left: 8px;
+    margin-right: 8px;
+    color: #222;
+    border-radius: 100px;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1)
+ }
+ #menu .nav-pills .nav-link.active{
+background-color: #f58d17;
+color: #ffffff;
+ }
+
+ .menu-item .stars{
+    color: #f58d17;
+ }
+  /*features*/
+  #features{
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../images/macroni.jpg)
+  }
+  .feature{
+    border: 2px solid rgba(255, 255, 255, 0.2);
+  }
+  .feature .feature-icon{
+   width: 70px;
+   height: 70;
+   background-color: #f58d17;
+   color: #fff;
+   font-size: 24px;
+  display: inline-grid;
+  align-content: center;
+  text-align: center;
+
+  }
+  /*Team*/
+  .team-member img{
+width: 140px;
+box-shadow: -10px -10px 0  #f58d17;
+border: 100px;
+  }
+
+/*reviews*/
+  #reviews{
+  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../images/food2.jpeg);
+  }
+  .reviews img{
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+  }
+  .reviews .quote-icon{
+    font-size: 60px;
+    color: #f58d17;
+    line-height: 1;
+  }
+  .reviews .stars{
+    color: #f58d17;
+  }
+  #review .carousel-indicators {
+    margin-bottom: -3rem;
+  }
+  /*reservation*/
+  #reservation .form-control{
+    border-radius: 0;
+  }
+  #reservation .form-control:focus{
+    box-shadow: none;
+    border-color: #f58d17;
+
+  }
+  #reservation input .form-control{
+    height: 47px;
+  }
+  #reservation .btn{
+    
+  }
+   /*footer*/
+   footer{
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(../images/footer.jpg);
+   }
+  .footer-top img{
+    height: 40px; /* Adjust the height as needed */
+    width: 40px;
+    margin-top: 8px;
+    
+  }
+  .footer-top .list-unstyled{
+   color: #ffffff;
+
+  }
+  .footer-top{
+    color: #9c9999;
+  }
