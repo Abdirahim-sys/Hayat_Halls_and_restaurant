@@ -210,12 +210,41 @@ border: 100px;
     height: 40px; /* Adjust the height as needed */
     width: 40px;
     margin-top: 8px;
-    
   }
+    .footer-logo{
+    display: flex;
+    }
+    
+  
   .footer-top .list-unstyled{
-   color: #ffffff;
+    color: #999;
 
   }
-  .footer-top{
-    color: #9c9999;
-  }
+
+  
+  /*social links*/
+  .quick-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-links a {
+    color: #fff;
+    text-decoration: none;
+}
+.contact-info {
+
+  color: #fff;
+}
+
+.social-links {
+  
+  
+}
+
+.social-icon {
+  font-size: 24px;
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
