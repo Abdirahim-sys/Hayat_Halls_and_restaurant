@@ -149,7 +149,39 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="./assets/js/aos.js"></script>
+<script src="./assets/js/aos.js">
+  document.addEventListener('DOMContentLoaded', function() {
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // Form submission handling
+            const reservationForm = document.querySelector('#reservation-form');
+            reservationForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                // Form validation
+                const fullName = document.querySelector('[placeholder="full name"]').value;
+                const email = document.querySelector('[placeholder="your email address"]').value;
+                const date = document.querySelector('[placeholder="Date"]').value;
+                const numOfPersons = document.querySelector('[placeholder="Number of persons"]').value;
+
+                if (fullName.trim() === '' || email.trim() === '' || date.trim() === '' || numOfPersons.trim() === '') {
+                    alert('Please fill in all required fields.');
+                } else {
+                    // TODO: Add code for form submission or any additional actions
+                    alert('Form submitted successfully!');
+                }
+            });
+        });
+</script>
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 <script src="./assets/js/bootstrap.min.js"></script>
 </body>
